@@ -4,10 +4,11 @@ angular.module('appApp')
   .controller('MainCtrl', function ($scope, $http) {
     $scope.awesomeThings = [];
 
-    $http.get('/api/things').success(function(awesomeThings) {
-      $scope.awesomeThings = awesomeThings;
-    });
-
+    $scope.getStockData = function() {
+        $http.get('/api/things/stock').success(function(awesomeThings) {
+        $scope.awesomeThings = awesomeThings;
+      });
+    }
     $scope.addThing = function() {
       if($scope.newThing === '') {
         return;
