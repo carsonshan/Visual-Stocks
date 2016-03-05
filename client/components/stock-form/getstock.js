@@ -9,7 +9,7 @@ $(function() {
 	sectors["industrial goods"] = [];
 	sectors["services"] = [];
 	sectors["technology"] =["ACN", "CTSH", "HCKT", "BAH", "INFN", "BIDU", "GOOG", "GOOGL", "MSFT", "AAPL"];
-	sectors["utilities"] = [];
+	sectors["utilities"] = ["ABY", "CVA", "BIP", "OTTR", "ETR", "SO", "NRG", "POM", "DUK", "TAC"];
 
 
     $("#tech").click(function() {
@@ -21,5 +21,8 @@ $(function() {
     });
     $("#healthcare").click(function() {
     	sectors["healthcare"];
+    });
+    $("#util").click(function() {
+        sectors["utilities"];
     });
   });
