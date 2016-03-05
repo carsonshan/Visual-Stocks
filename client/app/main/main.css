@@ -1,9 +1,10 @@
 .thing-form {
     margin: 20px 0;
 }
-
-text {
-  font: 10px sans-serif;
+.centered {
+  position: absolute;
+  top: -10%;
+  left: 25%;
 }
 
 node {
